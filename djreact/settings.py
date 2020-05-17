@@ -95,9 +95,12 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ),
 }
-CORS_ORIGIN_WHITELIST = (
-    'localhost:3000',
-)
+# CORS_ORIGIN_WHITELIST = (
+# 'https://djreactbysai.herokuapp.com/'
+# )
+
+CORS_ORIGIN_ALLOW_ALL=True
+
 
 CSRF_COOKIE_NAME = "csrftoken"
 
